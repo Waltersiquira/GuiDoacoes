@@ -26,5 +26,6 @@
         }
         ?>
     </table>
+    <?php $l->close() ?>
 </body>
 </html>
