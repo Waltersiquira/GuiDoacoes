@@ -17,12 +17,11 @@
             echo 'error';
         } else {
             while ($reg=$busca->fetch_object()){
-                echo "<img src='$reg->imagem' width='500'> <h3>$reg->nome</h3> <h4>$reg->preço</h4> <hr> <p>$reg->descrição</p>";
+                echo "<img src='$reg->imagem' width='500'> <h3>$reg->nome</h3> <h4>R$$reg->preço</h4> $reg->totdoacoes pessoas já faz doações <hr> <p>$reg->descrição</p> <button style='background-color: blue;'><a href='doar.php?i=$reg->id' style='text-decoration: none; color: white;'>Doar</a></button>";
             }
         }
     }
     ?>
-    <button style="background-color: blue;"><a href="doar.php" style="text-decoration: none; color: white;">Doar</a></button>
     <?php $l->close() ?>
 </body>
 </html>
