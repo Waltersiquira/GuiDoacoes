@@ -15,5 +15,6 @@
         echo 'error';
     }
     ?>
+    <?php $l->close() ?>
 </body>
 </html>
